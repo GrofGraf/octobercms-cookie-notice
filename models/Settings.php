@@ -10,7 +10,7 @@ class Settings extends Model
     ];
 
     public $translatable = [
-      'cookie_notice_text',
+      'cookie_notice_content',
       'button_text'
     ];
 
