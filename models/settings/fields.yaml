@@ -1,0 +1,16 @@
+fields:
+  cookie_notice_content:
+    label: 'Content'
+    comment: 'Cookie notice content'
+    type: textarea
+    default: 'This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.'
+  button_text:
+    label: 'Button'
+    comment: 'Button text'
+    type: text
+    default: 'Agree!'
+  days_valid:
+    label: 'Days valid'
+    comment: 'How many days the cookie is valid'
+    type: number
+    default: 180
