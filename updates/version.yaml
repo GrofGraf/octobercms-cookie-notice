@@ -1,2 +1,7 @@
 1.0.1: First version of CookieNotice
 1.0.2: Added cookie expiration date
+1.0.3:
+  - Added default values for empty content
+  - Removed loadBootstrap property
+  - Updated main.css
+  - Updated README.md

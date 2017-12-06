@@ -27,19 +27,42 @@ All you need to do is to import the `cookieNotice` component to a page layout. T
 
     </html>
 
-There are two optional parameters loadBootstrap and loadCSS. It is not recommended for production to have loadBootstrap enabled. It is also not recommended to have loadCSS enabled unless your server supports HTTP/2 protocol. A better approach would be, to copy required CSS into your main CSS file, to reduce a number of server requests.
+There is one optional parameter `loadCSS`. It is not recommended for production to have `loadCSS` enabled unless your server supports HTTP/2 protocol. A better approach would be, to copy required CSS into your main CSS file, to reduce a number of server requests.
 
 CSS file looks like this:
 
     .cookie-notice{
       position:fixed;
       width:100%;
-      background-color:rgba(0,0,0,0.5);
+      background-color:rgba(0,0,0,.8);
+      font-weight:200;
       color:#ffffff;
       bottom:0;
       transform: translate(0, -10rem);
       z-index:10000;
       animation:cookie-notice-slide-in 1s ease-out forwards;
+    }
+    .cookie-notice > div{
+      display:flex!important;
+      justify-content: flex-end!important;
+      align-items: center!important;
+      padding-top:1em;
+      padding-bottom:1em;
+    }
+    .cookie-notice > div > div {
+      padding-right:1em;
+      margin-right:auto;
+    }
+    .cookie-notice button{
+      background:transparent;
+      border:solid 1px #ffffff;
+      border-radius:0;
+      color:#ffffff;
+      padding:8px 15px;
+    }
+    .cookie-notice button:hover{
+      background-color:rgba(255,255,255,0.4);
+      color:#ffffff;
     }
     @keyframes cookie-notice-slide-in{
       0% {
