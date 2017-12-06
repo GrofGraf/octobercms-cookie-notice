@@ -17,7 +17,6 @@ All you need to do is to import the `cookieNotice` component to a page layout. T
 
     description = "layout"
     [cookieNotice]
-    loadBootstrap = 0
     loadCSS = 1
     ==
     <!DOCTYPE html>
