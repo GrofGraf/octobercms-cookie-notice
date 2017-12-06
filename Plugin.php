@@ -52,7 +52,7 @@ class Plugin extends PluginBase
     {
 
         return [
-            'GrofGraf\CookieNotice\Components\cookieNotice' => 'cookieNotice',
+            'GrofGraf\CookieNotice\Components\CookieNotice' => 'cookieNotice',
         ];
     }
 

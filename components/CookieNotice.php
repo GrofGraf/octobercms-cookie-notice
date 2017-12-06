@@ -3,7 +3,7 @@
 use GrofGraf\CookieNotice\Models\Settings;
 use Cms\Classes\ComponentBase;
 
-class cookieNotice extends ComponentBase
+class CookieNotice extends ComponentBase
 {
     public function componentDetails()
     {

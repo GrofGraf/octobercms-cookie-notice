@@ -5,3 +5,4 @@
   - Removed loadBootstrap property
   - Updated main.css
   - Updated README.md
+1.0.4: Fixed component namespace
