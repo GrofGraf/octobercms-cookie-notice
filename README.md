@@ -13,7 +13,7 @@ This plugin creates a Settings menu item, found by navigating to **Settings > Co
 If [Translate](https://octobercms.com/plugin/rainlab-translate) is enabled, content and button text are translatable.
 
 ## Usage
-All you need to do is to import the `cookieNotice` component to a page layout. There is no need to call it anywhere in the page.
+All you need to do is to import the `cookieNotice` component to a page layout and add `{% component %}` tag somewhere in the body.
 
     description = "layout"
     [cookieNotice]
@@ -21,9 +21,13 @@ All you need to do is to import the `cookieNotice` component to a page layout. T
     ==
     <!DOCTYPE html>
     <html>
-
-    ...
-
+      <head>
+        ...
+      </head>
+      <body>
+        {% component 'cookieNotice' %}
+        ...
+      </body>
     </html>
 
 There is one optional parameter `loadCSS`. It is not recommended for production to have `loadCSS` enabled unless your server supports HTTP/2 protocol. A better approach would be, to copy required CSS into your main CSS file, to reduce a number of server requests.

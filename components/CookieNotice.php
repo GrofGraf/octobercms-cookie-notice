@@ -27,11 +27,11 @@ class CookieNotice extends ComponentBase
 
     public function onRun(){
       if(!isset($_COOKIE['confirm_cookie'])){
-        echo $this->runCookieNotice();
+        $this->page['cookie_notice'] = $this->getCookieNotice();
       }
     }
 
-    public function runCookieNotice(){
+    public function getCookieNotice(){
       if($this->property('loadCSS') == true){
         $this->addCss('assets/css/main.css');
       }
