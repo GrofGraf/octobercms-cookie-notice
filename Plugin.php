@@ -100,7 +100,8 @@ class Plugin extends PluginBase
                 'category'    => 'Cookies',
                 'icon'        => 'icon-legal',
                 'class'       => 'GrofGraf\CookieNotice\Models\Settings',
-                'order'       => 100
+                'order'       => 100,
+                'permissions' => ['grofgraf.cookienotice.settings']
             ]
         ];
     }
