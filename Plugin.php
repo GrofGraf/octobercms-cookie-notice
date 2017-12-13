@@ -66,9 +66,9 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'grofgraf.cookienotice.some_permission' => [
+            'grofgraf.cookienotice.settings' => [
                 'tab' => 'CookieNotice',
-                'label' => 'Some permission'
+                'label' => 'Manage cookie notice content'
             ],
         ];
     }
